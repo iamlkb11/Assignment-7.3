@@ -1,0 +1,25 @@
+<html><!-- Head of the Root -->
+	<head><!-- child sub root of the html tag as head tag  -->
+    	<!-- it is a title tag -->
+		<title>Time Delay</title>
+	</head>
+	<body>
+
+		<h3>Click the button then alert will show after 5 miliseconds</h3><br>
+
+		<!--On clicking this button a time out is set for 5 miliseconds and then the alert method is called -->
+		<input type="button" name="btn" value="Click Me" onclick="setTimeout(callAlert, 5)">
+
+		<script type="text/javascript">
+			function callAlert()
+			{
+			/*An Anonymous method is assign to testMethod variable and when this variable is executed, alert method is displayed!*/
+			var testMethod=function ()
+				{
+				alert("This message is displayed after 5 seconds!!!");			
+				}
+			testMethod();
+			}
+		</script>
+	</body>
+</html>
